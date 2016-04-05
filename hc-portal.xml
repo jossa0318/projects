@@ -58,6 +58,11 @@
 	position: relative;
     min-height: 1px;
 }
+.col-sm-12 {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+}
 .col-scale:hover {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
