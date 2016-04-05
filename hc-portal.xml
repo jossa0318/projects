@@ -29,90 +29,99 @@
 		
   	.container {
   		width: 970px !important;  		
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	    margin-right: auto;
+	    margin-left: auto;
 	}
 	
 	.row {
 		margin-right: -15px;
-    margin-left: -15px;
+    	margin-left: -15px;
 	}
 	
+	.default {
+  		background-color: transparent;
+	}
 	
-.default {
-  background-color: transparent;
-}
-.row-custom1 {
-  padding: 0 6px 0 5px;
-}
-.row-first {
-  padding-top: 5px;
-}
-.col-custom {
-  padding: 5px;
-}
-.col-sm-4 {
-	width: 33.33333333%;
-	float: left;
-	position: relative;
-    min-height: 1px;
-}
-.col-sm-12 {
-    width: 100%;
-    position: relative;
-    min-height: 1px;
-}
-.col-scale:hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform; scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
-  
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.scale-group:hover .col-scale:not(:hover) {
-  opacity: 0.4;
-}
-.description-title{
-  font-size: 16px;
-  color: white;
-}
-.description{
-  font-size: 12px;
-  color: white;
-}
-.link1{
-	height: 80px;
-	padding: 20px;
-}
-.link3{
-	height: 240px;
-	padding: 20px;
-}
-.block1{
-  padding: 20px 10px;
-  background-color: #3498DB;
-}
-.block2{
-  padding: 20px 10px;
-  background-color: #F9690E;
-}
-.block6{
-  padding: 20px 10px; 
-  background-color: #E26A6A; 
-}
+	.row-custom1 {
+  		padding: 0 6px 0 5px;
+	}
+	
+	.row-first {
+  		padding-top: 5px;
+	}
+	
+	.col-custom {
+  		padding: 5px;
+	}
 
-.block12{
-  padding: 20px 10px;
-  background-color: #2ECC71;
-}  
+	.col-sm-4 {
+		width: 33.33333333%;
+		float: left;
+		position: relative;
+	    min-height: 1px;
+	}
+	
+	.col-sm-12 {
+	    width: 100%;
+	    position: relative;
+	    min-height: 1px;
+	}
+	
+	.col-scale:hover {
+	  -webkit-transform: scale(1.05);
+	  -moz-transform: scale(1.05);
+	  -ms-transform; scale(1.05);
+	  -o-transform: scale(1.05);
+	  transform: scale(1.05);
+	  
+	  -webkit-transition: all 0.2s;
+	  -moz-transition: all 0.2s;
+	  -ms-transition: all 0.2s;
+	  -o-transition: all 0.2s;
+	  transition: all 0.2s;
+	}
+	
+	.scale-group:hover .col-scale:not(:hover) {
+	  opacity: 0.4;
+	}
+	
+	.description-title{
+	  font-size: 16px;
+	  color: white;
+	}
+	
+	.description{
+  		font-size: 12px;
+  		color: white;
+	}
+	
+	.link1{
+		height: 80px;
+		padding: 20px;
+	}
+	.link3{
+		height: 240px;
+		padding: 20px;
+	}
+	.block1{
+	  padding: 20px 10px;
+	  background-color: #3498DB;
+	}
+	.block2{
+	  padding: 20px 10px;
+	  background-color: #F9690E;
+	}
+	.block6{
+	  padding: 20px 10px; 
+	  background-color: #E26A6A; 
+	}
+	
+	.block12{
+	  padding: 20px 10px;
+	  background-color: #2ECC71;
+	}  
     
 </style>
 </head>
@@ -153,7 +162,7 @@
 								<p class="description-title">WIKI</p>
 							</div>
 							<div class="row link3">
-								<p class="description"> go to wiki site </p>						
+								<p class="description"> One of the biggest factors that contribute to the success of any business is whether or not its employees are able to perform together as a team.  With increasing competition, it has become extremely important to encourage creativity in the office, in order to improve productivity and promote healthy employee relationships. Working in teams enables employees to be quicker and more effective in their work, as compared to people who work on projects on their own.  Collaborating also makes employees more responsible, which goes a long way in raising their motivation levels, especially when teams work virtually.</p>	
 							</div>
 						</div>
 					</a>
