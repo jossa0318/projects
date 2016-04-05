@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Module>
+  <ModulePrefs title="test Portal page"/>
+  <Content type="html">
+  <![CDATA[
+  
+  <style>
+  
+  	* {
+  		box-sizing: border-box;
+  	}
+  	
+  	div {
+  		display: block;
+  	}
+  	
+  	article {
+  		display: block;
+	}
+	
+	a {
+		text-decoration: none;
+		background: 0 0;
+		cursor: auto;
+	}
+		
+  	.container {
+  		width: 970px !important;  		
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	
+	.row {
+		margin-right: -15px;
+    margin-left: -15px;
+	}
+	
+	
+.default {
+  background-color: transparent;
+  margin-top:83px;
+}
+.row-custom1 {
+  padding: 0 6px 0 5px;
+}
+.row-first {
+  padding-top: 5px;
+}
+.col-custom {
+  padding: 5px;
+}
+.col-sm-4 {
+	width: 33.33333333%;
+	float: left;
+	position: relative;
+    min-height: 1px;
+}
+.col-scale:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform; scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.scale-group:hover .col-scale:not(:hover) {
+  opacity: 0.4;
+}
+.description-title{
+  font-size: 16px;
+  color: white;
+}
+.description{
+  font-size: 12px;
+  color: white;
+}
+.link1{
+	height: 80px;
+	padding: 20px;
+}
+.link3{
+	height: 240px;
+	padding: 20px;
+}
+.block1{
+  padding: 20px 10px;
+  background-color: #3498DB;
+}
+.block2{
+  padding: 20px 10px;
+  background-color: #F9690E;
+}
+.block6{
+  padding: 20px 10px; 
+  background-color: #E26A6A; 
+}
+
+.block12{
+  padding: 20px 10px;
+  background-color: #2ECC71;
+}
+    
+    
+    </style>
+<div class="container">
+
+	<!-- title description -->
+	<div class="row row-custom1">
+		<div class="col-sm-12 block6">
+			<p class ="description">put description here</p>
+		</div>
+	</div>
+	
+	<!-- links -->
+	<div class="row row-first">
+		<article class="scale-group">
+			
+			<!-- DOMAIN -->
+			<div class="col-sm-4 col-custom">
+				<a href="https://sites.google.com/a/pointwest.com.ph/hmc-domain-website/" target="_top">
+					<div class="col-scale block12">
+						<div class="row link1">
+							<p class="description-title">DOMAIN</p>
+						</div>
+						<div class="row link3">
+							<p class="description">The Healthcare Industry being identified as one of the industries from which POINTWEST wishes to expand its business operations is very broad and POINTWEST's understanding of this domain is currently limited by the projects that it has been exposed to (i.e. Pharmaceutical and Medical Benefit Claims). With the plan to increase the market share of POINTWEST related services, the Healthcare Market Circle (HMC) must be able to understand the needs of these organizations, and this can be initiated through an appreciation of the domain and hence the initiative to document this domain understanding.</p>						
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<!-- WIKI -->
+			<div class="col-sm-4 col-custom">
+				<a href="#" target="_top">
+					<div class="col-scale block2">
+						<div class="row link1">
+							<p class="description-title">WIKI</p>
+						</div>
+						<div class="row link3">
+							<p class="description"> go to wiki site </p>						
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<!-- OTHER -->
+			<div class="col-sm-4 col-custom">
+				<a href="#" target="_top">
+					<div class="col-scale block1">
+						<div class="row link1">
+							<p class="description-title">TIMETRACKER</p>
+						</div>
+						<div class="row link3">
+							<p class="description"> go to timetracker site </p>						
+						</div>
+					</div>
+				</a>
+			</div>
+			
+		</article>
+	</div>
+</div>
+  ]]>
+  </Content>
+</Module>
