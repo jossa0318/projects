@@ -6,102 +6,93 @@
   <![CDATA[
   
   <style>
-  
-  	* {
-  		box-sizing: border-box;
+     * {
+        box-sizing: border-box;
+        }
+     div {
+  	display: block;
   	}
-  	
-  	div {
-  		display: block;
+     article {
+  	display: block;
+	}
+     a {
+        text-decoration: none;
+	background: 0 0;
+	cursor: auto;
+	}
+     .container {
+        width: 970px !important;  		
+    	padding-right: 15px;
+    	padding-left: 15px;
+    	margin-right: auto;
+    	margin-left: auto;
+	}
+     .row {
+        margin-right: -15px;
+    	margin-left: -15px;
+	}
+     .default {
+  	background-color: transparent;
+  	margin-top:83px;
   	}
-  	
-  	article {
-  		display: block;
+     .row-first {
+        padding-top: 5px;
+        }
+     .col-custom {
+  	padding: 5px;
 	}
-	
-	a {
-		text-decoration: none;
-		background: 0 0;
-		cursor: auto;
-	}
-		
-  	.container {
-  		width: 970px !important;  		
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-	}
-	
-	.row {
-		margin-right: -15px;
-    margin-left: -15px;
-	}
-	
-	
-.default {
-  background-color: transparent;
-  margin-top:83px;
-}
-.row-first {
-  padding-top: 5px;
-}
-.col-custom {
-  padding: 5px;
-}
-.col-sm-4 {
+     .col-sm-4 {
 	width: 33.33333333%;
 	float: left;
 	position: relative;
-    min-height: 1px;
-}
-.col-scale:hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform; scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
+    	min-height: 1px;
+  	}
+     .col-scale:hover {
+  	-webkit-transform: scale(1.05);
+  	-moz-transform: scale(1.05);
+  	-ms-transform; scale(1.05);
+  	-o-transform: scale(1.05);
+  	transform: scale(1.05);
   
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.scale-group:hover .col-scale:not(:hover) {
-  opacity: 0.4;
-}
-.description-title{
-  font-size: 16px;
-  color: white;
-}
-.description{
-  font-size: 12px;
-  color: white;
-}
-.link1{
+	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-ms-transition: all 0.2s;
+  	-o-transition: all 0.2s;
+  	transition: all 0.2s;
+   	}
+     .scale-group:hover .col-scale:not(:hover) {
+  	opacity: 0.4;
+	}
+     .description-title{
+  	font-size: 16px;
+  	color: white;
+	}
+     .description{
+  	font-size: 12px;
+  	color: white;
+	}
+     .link1 {
 	height: 80px;
 	padding: 20px;
-}
-.link3{
+	}
+     .link3{
 	height: 240px;
 	padding: 20px;
-}
-.block1{
-  padding: 20px 10px;
-  background-color: #3498DB;
-}
-.block2{
-  padding: 20px 10px;
-  background-color: #F9690E;
-}
-.block12{
-  padding: 20px 10px;
-  background-color: #2ECC71;
-}
-    
-    
+	}
+     .block1{
+  	padding: 20px 10px;
+  	background-color: #3498DB;
+	}
+     .block2{
+  	padding: 20px 10px;
+  	background-color: #F9690E;
+	}
+     .block12{
+  	padding: 20px 10px;
+  	background-color: #2ECC71;
+	}
     </style>
+    
 <div class="container">
 	<div class="row row-first">
 		<article class="scale-group">
@@ -151,6 +142,7 @@
 		</article>
 	</div>
 </div>
+
   ]]>
   </Content>
 </Module>
