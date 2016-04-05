@@ -170,13 +170,13 @@
 				
 				<!-- OTHER -->
 				<div class="col-sm-4 col-custom">
-					<a href="#" target="_top">
+					<a href="https://tito.srv.pointwest.com.ph/timetracker/" target="_top">
 						<div class="col-scale block1">
 							<div class="row link1">
 								<p class="description-title">TIMETRACKER</p>
 							</div>
 							<div class="row link3">
-								<p class="description"> go to timetracker site </p>						
+								<p class="description">go >> Timetracker </p>						
 							</div>
 						</div>
 					</a>
