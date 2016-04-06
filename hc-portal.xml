@@ -486,7 +486,17 @@
 					<a href="http://proxy.srv.pointwest.com.ph/whiz2" target="_blank">
 						<div class="col-scale mco-block-height block4">
 							<p class="description-title">WHIZIBLE</p>
-							<p class="description">go to >> Whizible</p>	
+							<p class="description">Whizible is the Pointwest tool for managing projects and resources. It enables:
+								<ul>
+									<li>Project managers to monitor the projects, the issues, activities, and the hours spent on the projects.</li>
+									<li>The Training group and the practice managers to track the trainings attended by resources.</li>
+									<li>The project leadership to assign tasks to project team members and track the progress of each task.</li>
+									<li>Enables project members to report and track project issues.</li>
+									<li>Enables resources to report their progress on tasks assigned.</li>
+									<li>Enables individuals to apply for leaves.</li>
+									<li>Enables resources to submit timesheets, and the Project Accounting Group to track the expenses of the projects based on the timesheets.</li>
+								</ul>
+							</p>	
 						</div>
 					</a>
 			</div></article>
