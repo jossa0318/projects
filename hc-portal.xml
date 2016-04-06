@@ -28,7 +28,6 @@
 		
 		.default {
 		  background-color: transparent;
-		  margin-top:83px;
 		}
 		
 		.summary {
