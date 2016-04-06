@@ -453,7 +453,7 @@
 			
 				<!-- DOMAIN -->
 				<div class="col-sm-3 col-custom">
-					<a href="https://sites.google.com/a/pointwest.com.ph/hmc-domain-website/">
+					<a href="https://sites.google.com/a/pointwest.com.ph/hmc-domain-website/" target="_blank">
 						<div class="col-scale mco-block-height block1">
 							<p class="description-title">DOMAIN</p>
 							<p class="description">HMC Domain Knowledge Site features an insight of what makes health care industry different from other markets.</p>				
@@ -463,7 +463,7 @@
 				
 				<!-- WIKI -->
 				<div class="col-sm-3 col-custom">
-					<a href="https://sites.google.com/a/pointwest.com.ph/healthcareavenue/">
+					<a href="https://sites.google.com/a/pointwest.com.ph/healthcareavenue/" target="_blank">
 						<div class="col-scale mco-block-height block2">				
 							<p class="description-title">WIKI</p>
 							<p class="description">HMC Wiki Site is your destination for documentation of best practices standards, knowledge base articles and more.  And soon - you will be able to contribute to the site by posting write-ups about interesting topics that you find useful to the organization.</p>	
@@ -473,7 +473,7 @@
 				
 				<!-- TIMETRACKER -->
 				<div class="col-sm-3 col-custom">	
-					<a href="https://tito.srv.pointwest.com.ph/timetracker/">
+					<a href="https://tito.srv.pointwest.com.ph/timetracker/" target="_blank">
 						<div class="col-scale mco-block-height block3">
 							<p class="description-title">TIMETRACKER</p>
 							<p class="description">go to >> Timetracker</p>	
@@ -483,7 +483,7 @@
 				
 				<!-- WHIZIBLE -->
 				<div class="col-sm-3 col-custom">	
-					<a href="http://proxy.srv.pointwest.com.ph/whiz2">
+					<a href="http://proxy.srv.pointwest.com.ph/whiz2" target="_blank">
 						<div class="col-scale mco-block-height block4">
 							<p class="description-title">WHIZIBLE</p>
 							<p class="description">go to >> Whizible</p>	
