@@ -438,15 +438,16 @@
 
 <body class="default">
 
-	<!-- title description -->
-	<div class="row row-custom1">
-		<div class="col-sm-12 block6">
-			<p class ="description">Welcome to the Healthcare Market Circle (HMC) Portal - your one-stop shop for everything Healthcare!</p>
-		</div>
-	</div>
-
 	<div class="container">
-		<div class="row">
+	
+		<!-- title description -->
+		<div class="row row-custom1">
+			<div class="col-sm-12 block6">
+				<p class ="description">Welcome to the Healthcare Market Circle (HMC) Portal - your one-stop shop for everything Healthcare!</p>
+			</div>
+		</div>
+	
+		<div class="row row-first">
 			<article class="scale-group">
 			
 				<!-- DOMAIN -->
