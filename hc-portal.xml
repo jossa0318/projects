@@ -7,185 +7,490 @@
   
   <html>
   <head>
-  <style>
-  
-  	* {
-  		box-sizing: border-box;
-  	}
-  	
-  	div {
-  		display: block;
-  	}
-  	
-  	article {
-  		display: block;
-	}
+	<meta charset="ISO-8859-1">
+	<title>Health Care Portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	a {
-		text-decoration: none;
-		background: 0 0;
-		cursor: auto;
-	}
-		
-  	.container {
-  		width: 970px !important;  		
-	    padding-right: 15px;
-	    padding-left: 15px;
-	    margin-right: auto;
-	    margin-left: auto;
-	}
-	
-	.row {
-		margin-right: -15px;
-    	margin-left: -15px;
-	}
-	
-	.default {
-  		background-color: transparent;
-	}
-	
-	.row-custom1 {
-  		padding: 0 6px 0 5px;
-	}
-	
-	.row-first {
-  		padding-top: 5px;
-	}
-	
-	.col-custom {
-  		padding: 5px;
-	}
-
-	.col-sm-4 {
-		width: 33.33333333%;
-		float: left;
-		position: relative;
-	    min-height: 1px;
-	}
-	
-	.col-sm-12 {
-	    width: 100%;
-	    position: relative;
-	    min-height: 1px;
-	}
-	
-	.col-scale:hover {
-	  -webkit-transform: scale(1.05);
-	  -moz-transform: scale(1.05);
-	  -ms-transform; scale(1.05);
-	  -o-transform: scale(1.05);
-	  transform: scale(1.05);
-	  
-	  -webkit-transition: all 0.2s;
-	  -moz-transition: all 0.2s;
-	  -ms-transition: all 0.2s;
-	  -o-transition: all 0.2s;
-	  transition: all 0.2s;
-	}
-	
-	.scale-group:hover .col-scale:not(:hover) {
-	  opacity: 0.4;
-	}
-	
-	.description-title{
-	  font-size: 16px;
-	  color: white;
-	}
-	
-	.description{
-  		font-size: 12px;
-  		color: white;
-	}
-	
-	.link1{
-		height: 80px;
-		padding: 20px;
-	}
-	.link3{
-		height: 240px;
-		padding: 20px;
-	}
-	.block1{
-	  padding: 20px 10px;
-	  background-color: #3498DB;
-	}
-	.block2{
-	  padding: 20px 10px;
-	  background-color: #F9690E;
-	}
-	.block6{
-	  padding: 20px 10px; 
-	  background-color: #E26A6A; 
-	}
-	
-	.block12{
-	  padding: 20px 10px;
-	  background-color: #2ECC71;
-	}  
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  
+	<link rel="stylesheet" href="https://bootflat.github.io/bootflat/css/bootflat.css">
     
-</style>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<script src="https://bootflat.github.io/bootflat/js/icheck.min.js"></script>
+	<script src="https://bootflat.github.io/bootflat/js/jquery.fs.selecter.min.js"></script>
+	<script src="https://bootflat.github.io/bootflat/js/jquery.fs.stepper.min.js"></script>
+	
+	<style>
+		.container {
+		  width: 970px !important;
+		}
+		
+		.default {
+		  background-color: transparent;
+		  margin-top:83px;
+		}
+		
+		.summary {
+		  padding: 10px 0;
+		}
+		
+		.row-custom {
+		  padding: 0 0 0 20px;
+		}
+		
+		.row-custom1 {
+		  padding: 0 6px 0 5px;
+		}
+		.row-first {
+		  padding-top: 5px;
+		}
+		
+		.col-custom {
+		  padding: 5px;
+		}
+		
+		.col-scale:hover {
+		  -webkit-transform: scale(1.05);
+		  -moz-transform: scale(1.05);
+		  -ms-transform; scale(1.05);
+		  -o-transform: scale(1.05);
+		  transform: scale(1.05);
+		  
+		  -webkit-transition: all 0.2s;
+		  -moz-transition: all 0.2s;
+		  -ms-transition: all 0.2s;
+		  -o-transition: all 0.2s;
+		  transition: all 0.2s;
+		}
+		
+		.scale-group:hover .col-scale:not(:hover) {
+		  opacity: 0.4;
+		}
+		
+		.content-title{
+		  font-size: 20px;
+		  text-align: center;
+		  font-weight: bold;
+		  padding-bottom: 18px;
+		}
+		
+		.content-subtitle{
+		  font-size: 16px;
+		  text-align: left;
+		  font-weight: bold;
+		  font-style: italic;
+		  padding-left: 36px;
+		  line-height: 200%;
+		  padding-bottom: 16px;
+		  padding-top: 8px;
+		}
+		
+		.source{
+		  font-style: italic;
+		  font-size: 14px;
+		  padding: 2%;
+		  text-align: center;
+		}
+		.paragraph{
+		  padding-bottom: 16px;
+		  font-size: 16px;
+		}
+		
+		.rightArrow{
+		  position: absolute;
+		  right: 100px;
+		  color: white;
+		}
+		
+		.leftArrow{
+		  position: absolute;
+		  left: 100px;
+		  color: white;
+		}
+		
+		.disc {
+		  list-style-type: disc;
+		}
+		
+		.no-bullet {
+		  list-style-type: none;
+		}
+		
+		.section{
+		  margin-top: 6px;
+		  padding-top: 90px;
+		  height: 500px;
+		  /* background-color: rgb(216,159,57); */
+		  background-color: rgb(243,156,18);
+		}
+		
+		.headerBar{
+		  /* background-color: rgb(194, 123, 160); */
+		  background-color: rgb(175,94,156);
+		  padding: 10px;
+		  text-align: center;
+		}
+		
+		.description-title{
+		  font-size: 16px;
+		  color: white;
+		}
+		
+		.description{
+		  font-size: 12px;
+		  color: white;
+		}
+		/*professionals*/
+		.link{
+		  height: 160px;
+		}
+		/*link title*//*regulations*/
+		.link1{
+			height: 80px;
+			padding: 20px;
+		}
+		/*financing*/
+		.link2{
+			height: 150px;
+			padding: 20px;
+		}
+		/*revenue cycle*/
+		.link3{
+			height: 240px;
+			padding: 20px;
+		}
+		/*key measures*/
+		.link4{
+			height: 550px;
+			padding: 20px;
+		}
+		/*industry segments*//*hospital systems*/
+		.link5{
+			height: 220px;
+			padding: 20px;
+		}
+		
+		.colorBar{
+		  height: 100%;
+		}
+		
+		.block1{
+		  padding: 20px 10px;
+		  /* background-color: rgb(58,129,186); */
+		  background-color: rgb(52,152,219);
+		}
+		
+		.block2{
+		  padding: 20px 10px;
+		  /* background-color: rgb(242, 120, 75); */
+		  background-color: rgb(249, 105, 14);
+		}
+		
+		.block3{
+		  padding: 20px 10px;
+		  /* background-color: rgb(139, 129, 210); */
+		  background-color: rgb(155, 89, 182);
+		}
+		
+		.block4{
+		  padding: 20px 10px;
+		  /* background-color: rgb(166, 77, 121); */
+		  background-color: rgb(145, 61, 136);
+		}
+		
+		.block5{
+		  padding: 20px 10px;
+		  /* background-color: rgb(221, 126, 107); */  
+		  background-color: rgb(242, 120, 75); 
+		}
+		
+		.block6{
+		  padding: 20px 10px;
+		  /* background-color: rgb(194, 123, 160); */ 
+		  background-color: rgb(226, 106, 106); 
+		}
+		
+		.block7{
+		  padding: 20px 10px;
+		 /*  background-color: rgb(111, 168, 220); */
+		  background-color: rgb(107, 185, 240);
+		}
+		
+		.block8{
+		  padding: 20px 10px;
+		  /* background-color: rgb(230, 145, 56); */ 
+		  background-color: rgb(230, 126, 34);  
+		}
+		
+		.block9{
+		  padding: 20px 10px;
+		  background-color: rgb(166, 77, 121);  
+		}
+		
+		.block10{
+		  padding: 20px 10px;
+		  /* background-color: rgb(180, 167, 214); */
+		  background-color: rgb(190, 144, 212);
+		}
+		
+		.block11{
+		  padding: 20px 10px;
+		  /* background-color: rgb(204, 65, 37); */ 
+		  background-color: rgb(211, 84, 0);  
+		}
+		
+		.block12{
+		  padding: 20px 10px;
+		  /* background-color: rgb(139, 171, 66); */
+		  background-color: rgb(46, 204, 113);
+		}
+		
+		.block13{
+		  padding: 20px 10px;
+		  /* background-color: rgb(216,159,57); */
+		  background-color: rgb(244,179,80);
+		};
+		}
+		
+		/*Industry Segments Managed Care Pages */
+		.text-underline{
+		  text-decoration: underline;
+		}
+		
+		.caption{
+		  font-size: 14px;
+		  font-weight: bold;
+		}
+		
+		.mco-block-height{
+		  height: 330px;
+		}
+		
+		/*Health Care Industry Challenges Pages */
+		.hcic-section{
+		  margin-top: 6px;
+		  height: 462px;
+		  padding: 10px;
+		/*   background-color: rgb(216,159,57); */
+		  background-color: rgb(243,156,18);
+		  display: flex;
+		  align-items: center; 
+		}
+		  
+		.hcic-block-height{
+		  height: 226px;
+		}
+		
+		/*Industry Trends and Updates Pages */
+		.itu-block-height{
+		  height: 280px; 
+		}
+		
+		.picture{
+			margin: 20px 50px;
+		}
+		
+		.picture-small{
+			margin: 20px 20px;
+		}
+		
+		.hoverText{
+		  opacity: 0;
+		  width: 150px;
+		  height: 65px;
+		}
+		
+		.hoverText:hover{
+			position: fixed;
+			padding: 10px;
+			display: block; 
+			color: black;
+			opacity: 1;
+			/* background-color: rgb(58,129,186); */
+			width: 200px;
+			height: auto;
+		}
+		
+		.hoverTitle{
+			font-size: 12px;
+			text-decoration: underline;
+			font-weight: bold;
+			line-height: 100%;
+		}
+		.hoverContent{
+			font-size: 12px;
+		}
+		
+		.col-sm-15{
+		  width: 20%;
+		  float: left;
+		  position: relative;
+		  padding: 5px;
+		}
+		
+		/* X-button*/
+		
+		.closebutton{
+		  border: 1px solid #afafaf;
+		  border-radius:38px;
+		  height:38px;
+		  width:38px;
+		  top:15px;
+		  right:20px;
+		  position:absolute;
+		  text-decoration:none;
+		}
+		  
+		.closebutton:hover{
+		  border-radius:40px;
+		  height:40px;
+		  width:40px;
+		  position:absolute;
+		  -webkit-transform:rotate(-180deg);
+		  transform:rotate(-180deg), scale(1.5);
+		  -webkit-transition:border .3s,box-shadow .3s,-webkit-transform .3s;
+		  transition:border .3s,box-shadow .3s,transform .3s;  
+		  z-index:1;  
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+		  -webkit-transition-timing-function: ease-out;
+		  -webkit-font-smoothing: antialiased;
+		}
+		  
+		.closebutton:after{
+		  color:#afafaf;
+		  /* content:"x"; */
+		  font-size:30px;
+		  left:0;
+		  top: 0;
+		  text-align:center;  
+		  height: 36px;
+		  line-height: 36px;
+		  width: 36px;
+		  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+		  position:absolute
+		}
+		
+		.closecontainer{
+		  width: 970px;
+		  height: 60px;
+		}
+		
+		/* Carousel blurbs*/
+		#feature_slider .slide#showcasing .info {
+		  top: 80px !important;
+		  width: 33% !important;
+		}
+		
+		#feature_slider .slide#showcasing .info h2 {
+		  font-size: 30px !important;
+		  line-height: 35px !important;
+		}
+		
+		#feature_slider .slide#ideas .info {
+		  position: absolute !important;
+		  top: 100px !important;
+		  right: 7%;
+		  width: 47%;
+		  display: none;
+		  text-align: left !important; 
+		  z-index: 10;
+		}
+			  
+		#feature_slider .slide#ideas .info h2 {
+		  font-size: 30px !important;
+		  line-height: 35px !important;
+		  text-shadow: 1px 1px 1px #31393d;
+		}
+		
+		#feature_slider .slide#tour .info {
+		  top: 30px !important;
+		  right: 12% !important;
+		  width: 25% !important; 
+		  display: none;
+		  z-index: 10;
+		}
+		  
+		#feature_slider .slide#tour .info h2 {
+		  color: #fff;
+		  font-size: 30px !important;
+		  text-shadow: 1px 1px 1px #31393d !important;
+		  line-height: 35px !important; 
+		}
+		
+		#feature_slider .slide#responsive .info {
+		  top: 60px !important;
+		  right: 8% !important;
+		  width: 28% !important; 
+		  display: none;
+		  z-index: 10;
+		}
+			  
+		#feature_slider .slide#responsive .info h2 {
+		  color: #fff;
+		  font-size: 30px !important;
+		  text-shadow: 1px 1px 1px #31393d !important;
+		  line-height: 35px !important; 
+		}
+	</style>
 </head>
 
 <body class="default">
-	<div class="container">
-	
-		<!-- title description -->
-		<div class="row row-custom1">
-			<div class="col-sm-12 block6">
-				<p class ="description">put description here</p>
-			</div>
+
+	<!-- title description -->
+	<div class="row row-custom1">
+		<div class="col-sm-12 block6">
+			<p class ="description">Welcome to the Healthcare Market Circle (HMC) Portal - your one-stop shop for everything Healthcare!</p>
 		</div>
-		
-		<!-- links -->
-		<div class="row row-first">
+	</div>
+
+	<div class="container">
+		<div class="row">
 			<article class="scale-group">
-				
+			
 				<!-- DOMAIN -->
-				<div class="col-sm-4 col-custom">
-					<a href="https://sites.google.com/a/pointwest.com.ph/hmc-domain-website/" target="_top">
-						<div class="col-scale block12">
-							<div class="row link1">
-								<p class="description-title">DOMAIN</p>
-							</div>
-							<div class="row link3">
-								<p class="description">The Healthcare Industry being identified as one of the industries from which POINTWEST wishes to expand its business operations is very broad and POINTWEST's understanding of this domain is currently limited by the projects that it has been exposed to (i.e. Pharmaceutical and Medical Benefit Claims). With the plan to increase the market share of POINTWEST related services, the Healthcare Market Circle (HMC) must be able to understand the needs of these organizations, and this can be initiated through an appreciation of the domain and hence the initiative to document this domain understanding.</p>						
-							</div>
+				<div class="col-sm-3 col-custom">
+					<a href="https://sites.google.com/a/pointwest.com.ph/hmc-domain-website/">
+						<div class="col-scale mco-block-height block1">
+							<p class="description-title">Domain</p>
+							<p class="description">HMC Domain Knowledge Site features an insight of what makes health care industry different from other markets.</p>				
 						</div>
 					</a>
 				</div>
 				
 				<!-- WIKI -->
-				<div class="col-sm-4 col-custom">
-					<a href="https://sites.google.com/a/pointwest.com.ph/healthcareavenue/" target="_top">
-						<div class="col-scale block2">
-							<div class="row link1">
-								<p class="description-title">WIKI</p>
-							</div>
-							<div class="row link3">
-								<p class="description"> One of the biggest factors that contribute to the success of any business is whether or not its employees are able to perform together as a team.  With increasing competition, it has become extremely important to encourage creativity in the office, in order to improve productivity and promote healthy employee relationships. Working in teams enables employees to be quicker and more effective in their work, as compared to people who work on projects on their own.  Collaborating also makes employees more responsible, which goes a long way in raising their motivation levels, especially when teams work virtually.</p>	
-							</div>
+				<div class="col-sm-3 col-custom">
+					<a href="https://sites.google.com/a/pointwest.com.ph/healthcareavenue/">
+						<div class="col-scale mco-block-height block2">				
+							<p class="description-title">Wiki</p>
+							<p class="description">HMC Wiki Site is your destination for documentation of best practices standards, knowledge base articles and more.  And soon - you will be able to contribute to the site by posting write-ups about interesting topics that you find useful to the organization.</p>	
 						</div>
 					</a>
 				</div>
 				
-				<!-- OTHER -->
-				<div class="col-sm-4 col-custom">
-					<a href="https://tito.srv.pointwest.com.ph/timetracker/" target="_top">
-						<div class="col-scale block1">
-							<div class="row link1">
-								<p class="description-title">TIMETRACKER</p>
-							</div>
-							<div class="row link3">
-								<p class="description">go >> Timetracker </p>						
-							</div>
+				<!-- TIMETRACKER -->
+				<div class="col-sm-3 col-custom">	
+					<a href="https://tito.srv.pointwest.com.ph/timetracker/">
+						<div class="col-scale mco-block-height block3">
+							<p class="description-title">Timetracker</p>
+							<p class="description">go to >> Timetracker</p>	
 						</div>
 					</a>
 				</div>
 				
-			</article>
+				<!-- WHIZIBLE -->
+				<div class="col-sm-3 col-custom">	
+					<a href="http://proxy.srv.pointwest.com.ph/whiz2">
+						<div class="col-scale mco-block-height block4">
+							<p class="description-title">Whizible</p>
+							<p class="description">go to >> Whizible</p>	
+						</div>
+					</a>
+			</div></article>
 		</div>
 	</div>
-	</body>
+	
 </html>
 
   ]]>
